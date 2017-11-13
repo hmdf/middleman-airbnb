@@ -1,0 +1,46 @@
+  <!-- Access data.flats with owner's name as key -->
+  <% flat = data.flats[owner] %>
+
+  <!-- Inject flat data in template -->
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug%>'); height : 25vh; background-position: 25% 75%;">
+    </div>
+
+    <div class="header-flat" >
+      <div class="container">
+        <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+          <div class="header-flat-details">
+            <div class="flat-owner">
+              <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+              <p><%= flat.name %></p>
+            </div>
+            <div class="flat-name">
+              <h1><%= flat.description %></h1>
+              <div class="flat-description">
+                <p><%= flat.city_name %></p>
+                <% flat.wifi? wf="yes" ; wf="no" %>
+                <p><strong>wifi</strong> : <%=wf%></p>
+                <p><strong>rating</strong>: <%=flat.rating%></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+          <div class=form>
+            <div class="form-group">
+              <p> Book this flat </p>
+              <div class="row">
+                <div class="col-xs-6">
+                  <label for="check-in">Check-in:</label>
+                  <input type="check-in" class="form-control" id="check-in" placeholder="check-in">
+                </div>
+                <div class="col-xs-6">
+                  <label for="pwd">Check-out:</label>
+                  <input type="check-out" class="form-control" id="check-out" placeholder="check out">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+

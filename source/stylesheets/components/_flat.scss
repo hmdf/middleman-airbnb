@@ -1,0 +1,44 @@
+.header-flat {
+  background-color: #white;
+  display: flex;
+  align-items: center;
+}
+
+.img-circle {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.header-flat-details {
+  align-items: center;
+}
+
+.flat-owner {
+  padding: 20px;
+}
+
+.form {
+ padding: 4px;
+ background-color: #808080;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.flat-description {
+  font-size: 14px;
+
+  p {
+    margin: 3px;
+  }
+}
+
+h1 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+

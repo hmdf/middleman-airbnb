@@ -1,0 +1,21 @@
+hmdf:
+  name: "Hortense's home"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  wifi: false
+  rating: 10
+AurelDbs:
+  name: "Aurelie's home"
+  description: Small flat in Kampot
+  city_name: "Kampot, Cambodia"
+  city_slug: "tokyo"
+  wifi: true
+  rating: 1
+tiphanietourniaire:
+  name: "Tiph's home"
+  description: "Charming room in Sydney"
+  city_name: "Sydney, Australia"
+  city_slug: "paris"
+  wifi: false
+  rating: 9
